@@ -26,9 +26,8 @@ def shuffle_xy(X, y, seed=42):
     """
     if len(X)!=len(y):
         return None
-        
-    rng = np.random.default_rng(seed)
-    idx = rng.permutation(len(X))
+    np.random.seed(seed)
+    idx = np.random.permutation(len(X))
     return X[idx], y[idx]
 
 # Step 2 - split_train_val_test

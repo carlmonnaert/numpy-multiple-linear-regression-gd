@@ -20,7 +20,7 @@ python scaffold.py
 - [x] **8.** mse_loss
 - [x] **9.** mse_gradient
 - [x] **10.** normal_equation
-- [ ] **11.** initialize_weights
+- [x] **11.** initialize_weights
 - [ ] **12.** gd_step
 - [ ] **13.** epoch_train_val_losses
 - [ ] **14.** update_early_stop_state

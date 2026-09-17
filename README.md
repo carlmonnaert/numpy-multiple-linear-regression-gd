@@ -14,7 +14,7 @@ python scaffold.py
 - [x] **2.** split_train_val_test
 - [x] **3.** compute_feature_stats
 - [x] **4.** standardize_features
-- [ ] **5.** add_bias_column
+- [x] **5.** add_bias_column
 - [ ] **6.** prepare_design_matrix
 - [ ] **7.** predict_linear
 - [ ] **8.** mse_loss

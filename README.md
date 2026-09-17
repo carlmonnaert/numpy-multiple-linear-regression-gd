@@ -16,7 +16,7 @@ python scaffold.py
 - [x] **4.** standardize_features
 - [x] **5.** add_bias_column
 - [x] **6.** prepare_design_matrix
-- [ ] **7.** predict_linear
+- [x] **7.** predict_linear
 - [ ] **8.** mse_loss
 - [ ] **9.** mse_gradient
 - [ ] **10.** normal_equation

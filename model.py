@@ -59,8 +59,18 @@ def prepare_design_matrix(X, mean, std):
     X = (X - mean)/std
     return np.hstack( (np.ones((X.shape[0],1)) , X) )
 
-# Step 7 - predict_linear (not yet solved)
-# TODO: implement
+# Step 7 - predict_linear
+def predict_linear(X, weights):
+    """Compute linear predictions y_hat = X @ weights.
+
+    Args:
+        X: Design matrix of shape (n, d_in), often including a bias column.
+        weights: Weight vector of shape (d_in,).
+
+    Returns:
+        Predicted targets of shape (n,).
+    """
+    return X @ weights
 
 # Step 8 - mse_loss (not yet solved)
 # TODO: implement

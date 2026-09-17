@@ -56,7 +56,7 @@ def add_bias_column(X):
 
 # Step 6 - prepare_design_matrix
 def prepare_design_matrix(X, mean, std):
-    X = (X - mean)/std
+    X = standardize_features(X, mean, std)
     return np.hstack( (np.ones((X.shape[0],1)) , X) )
 
 # Step 7 - predict_linear

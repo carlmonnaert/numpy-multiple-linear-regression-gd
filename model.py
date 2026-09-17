@@ -44,7 +44,9 @@ def split_train_val_test(X, y, train_frac=0.6, val_frac=0.2):
 
 # Step 3 - compute_feature_stats
 def compute_feature_stats(X):
-    return [ X[:,i].mean() for i in range(X.shape[1])], [ X[:,i].std() if X[:,i].std() != 0 else 1.0 for i in range(X.shape[1])]
+    mean , std = X.mean(axis = 0), X.std(axis=0)
+    std = np.where(std == 0, 1.0, std)
+    return mean, std
 
 # Step 4 - standardize_features
 def standardize_features(X, mean, std):

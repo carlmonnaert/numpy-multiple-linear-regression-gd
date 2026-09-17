@@ -23,7 +23,7 @@ python scaffold.py
 - [x] **11.** initialize_weights
 - [x] **12.** gd_step
 - [x] **13.** epoch_train_val_losses
-- [ ] **14.** update_early_stop_state
+- [x] **14.** update_early_stop_state
 - [ ] **15.** init_training_state
 - [ ] **16.** run_one_epoch
 - [ ] **17.** train_batch_gd

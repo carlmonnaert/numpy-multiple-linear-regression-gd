@@ -31,8 +31,16 @@ def shuffle_xy(X, y, seed=42):
     idx = rng.permutation(len(X))
     return X[idx], y[idx]
 
-# Step 2 - split_train_val_test (not yet solved)
-# TODO: implement
+# Step 2 - split_train_val_test
+def split_train_val_test(X, y, train_frac=0.6, val_frac=0.2):
+    N_train = int( len(X) * train_frac )
+    N_val = int( len(X) * val_frac )
+    N_test = len(X) - N_val - N_train
+
+    train_idx = [ i for i in range(N_train) ]
+    val_idx = [ i for i in range(N_train, N_train + N_val)]
+    test_idx = [ i for i in range(N_train + N_val, N_train + N_val + N_test)]
+    return X[train_idx], y[train_idx], X[val_idx], y[val_idx], X[test_idx], y[test_idx]
 
 # Step 3 - compute_feature_stats (not yet solved)
 # TODO: implement

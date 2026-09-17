@@ -11,7 +11,7 @@ python scaffold.py
 ## Steps
 
 - [x] **1.** shuffle_xy
-- [ ] **2.** split_train_val_test
+- [x] **2.** split_train_val_test
 - [ ] **3.** compute_feature_stats
 - [ ] **4.** standardize_features
 - [ ] **5.** add_bias_column

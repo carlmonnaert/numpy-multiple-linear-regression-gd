@@ -22,7 +22,7 @@ python scaffold.py
 - [x] **10.** normal_equation
 - [x] **11.** initialize_weights
 - [x] **12.** gd_step
-- [ ] **13.** epoch_train_val_losses
+- [x] **13.** epoch_train_val_losses
 - [ ] **14.** update_early_stop_state
 - [ ] **15.** init_training_state
 - [ ] **16.** run_one_epoch

@@ -82,8 +82,11 @@ def mse_gradient(X, y_true, y_pred):
     # Grad(mse) = 1/n * 2 * (Y - Xw).T * X
     return 2/len(y_true) * (y_pred - y_true).T @ X
 
-# Step 10 - normal_equation (not yet solved)
-# TODO: implement
+# Step 10 - normal_equation
+def normal_equation(X, y):
+    # The normal equation is X.T X w = X.T y
+    # This is because y = X w + noise
+    return np.linalg.solve(X.T @ X, X.T @ y)
 
 # Step 11 - initialize_weights (not yet solved)
 # TODO: implement

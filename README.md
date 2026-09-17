@@ -12,7 +12,7 @@ python scaffold.py
 
 - [x] **1.** shuffle_xy
 - [x] **2.** split_train_val_test
-- [ ] **3.** compute_feature_stats
+- [x] **3.** compute_feature_stats
 - [ ] **4.** standardize_features
 - [ ] **5.** add_bias_column
 - [ ] **6.** prepare_design_matrix

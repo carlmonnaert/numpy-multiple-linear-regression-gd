@@ -42,8 +42,9 @@ def split_train_val_test(X, y, train_frac=0.6, val_frac=0.2):
     test_idx = [ i for i in range(N_train + N_val, N_train + N_val + N_test)]
     return X[train_idx], y[train_idx], X[val_idx], y[val_idx], X[test_idx], y[test_idx]
 
-# Step 3 - compute_feature_stats (not yet solved)
-# TODO: implement
+# Step 3 - compute_feature_stats
+def compute_feature_stats(X):
+    return [ X[:,i].mean() for i in range(X.shape[1])], [ X[:,i].std() if X[:,i].std() != 0 else 1.0 for i in range(X.shape[1])]
 
 # Step 4 - standardize_features (not yet solved)
 # TODO: implement

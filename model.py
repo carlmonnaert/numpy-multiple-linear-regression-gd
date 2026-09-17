@@ -76,8 +76,11 @@ def predict_linear(X, weights):
 def mse_loss(y_true, y_pred):
     return 1/len(y_true) * np.linalg.norm(y_pred - y_true,2)**2
 
-# Step 9 - mse_gradient (not yet solved)
-# TODO: implement
+# Step 9 - mse_gradient
+def mse_gradient(X, y_true, y_pred):
+    # mse = 1/n * ||Y - Xw||^2
+    # Grad(mse) = 1/n * 2 * (Y - Xw).T * X
+    return 2/len(y_true) * (y_pred - y_true).T @ X
 
 # Step 10 - normal_equation (not yet solved)
 # TODO: implement

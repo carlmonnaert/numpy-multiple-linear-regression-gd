@@ -219,8 +219,12 @@ def evaluate_regression(y_true, y_pred):
              'rmse' : root_mean_squared_error(y_true, y_pred),
              'r2' : r_squared(y_true, y_pred) }
 
-# Step 22 - learning_curve_data (not yet solved)
-# TODO: implement
+# Step 22 - learning_curve_data
+def learning_curve_data(train_losses, val_losses):
+    epochs = list(range(1, len(train_losses)+1))
+    train_list = np.array(train_losses).tolist()
+    val_list = np.array(val_losses).tolist()
+    return epochs, train_list, val_list
 
 # Step 23 - weights_l2_distance (not yet solved)
 # TODO: implement

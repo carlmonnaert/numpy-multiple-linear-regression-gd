@@ -35,7 +35,7 @@ python scaffold.py
 - [x] **23.** weights_l2_distance
 - [x] **24.** create_lr_model
 - [x] **25.** fit_lr_model
-- [ ] **26.** predict_lr_model
+- [x] **26.** predict_lr_model
 - [ ] **27.** score_lr_model
 - [ ] **28.** compare_with_normal_equation
 

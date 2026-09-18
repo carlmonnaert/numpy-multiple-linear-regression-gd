@@ -207,8 +207,11 @@ def mean_absolute_error(y_true, y_pred):
 def root_mean_squared_error(y_true, y_pred):
     return np.sqrt(mse_loss(y_true,y_pred))
 
-# Step 20 - r_squared (not yet solved)
-# TODO: implement
+# Step 20 - r_squared
+def r_squared(y_true, y_pred):
+    SSres = sum( (y_true - y_pred) ** 2 )
+    SStot = sum( (y_true - y_true.mean() ) ** 2 )
+    return 1 - SSres/SStot if SStot != 0 else float('nan')
 
 # Step 21 - evaluate_regression (not yet solved)
 # TODO: implement

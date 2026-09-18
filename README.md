@@ -37,7 +37,7 @@ python scaffold.py
 - [x] **25.** fit_lr_model
 - [x] **26.** predict_lr_model
 - [x] **27.** score_lr_model
-- [ ] **28.** compare_with_normal_equation
+- [x] **28.** compare_with_normal_equation
 
 ---
 

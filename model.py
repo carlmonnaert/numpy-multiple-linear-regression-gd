@@ -199,8 +199,9 @@ def train_batch_gd(X_train, y_train, X_val, y_val, lr, epochs, patience, seed=No
 
     return state['best_weights'], state['train_losses'], state['val_losses']
 
-# Step 18 - mean_absolute_error (not yet solved)
-# TODO: implement
+# Step 18 - mean_absolute_error
+def mean_absolute_error(y_true, y_pred):
+    return np.mean(np.abs(y_true - y_pred))
 
 # Step 19 - root_mean_squared_error (not yet solved)
 # TODO: implement

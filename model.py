@@ -171,7 +171,7 @@ def run_one_epoch(state, X_train, y_train, X_val, y_val, lr, patience):
     """
     weights = state['weights']
     best_weights = state['best_weights']
-    best_val_loss = state['best_weights']
+    best_val_loss = state['best_val_loss']
     wait = state['wait']
 
     weights = gd_step(X_train, y_train, weights, lr)

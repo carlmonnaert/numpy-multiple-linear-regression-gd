@@ -32,7 +32,7 @@ python scaffold.py
 - [x] **20.** r_squared
 - [x] **21.** evaluate_regression
 - [x] **22.** learning_curve_data
-- [ ] **23.** weights_l2_distance
+- [x] **23.** weights_l2_distance
 - [ ] **24.** create_lr_model
 - [ ] **25.** fit_lr_model
 - [ ] **26.** predict_lr_model

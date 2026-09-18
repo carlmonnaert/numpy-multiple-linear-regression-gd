@@ -25,7 +25,7 @@ python scaffold.py
 - [x] **13.** epoch_train_val_losses
 - [x] **14.** update_early_stop_state
 - [x] **15.** init_training_state
-- [ ] **16.** run_one_epoch
+- [x] **16.** run_one_epoch
 - [ ] **17.** train_batch_gd
 - [ ] **18.** mean_absolute_error
 - [ ] **19.** root_mean_squared_error

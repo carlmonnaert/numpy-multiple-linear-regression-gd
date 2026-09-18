@@ -203,8 +203,9 @@ def train_batch_gd(X_train, y_train, X_val, y_val, lr, epochs, patience, seed=No
 def mean_absolute_error(y_true, y_pred):
     return np.mean(np.abs(y_true - y_pred))
 
-# Step 19 - root_mean_squared_error (not yet solved)
-# TODO: implement
+# Step 19 - root_mean_squared_error
+def root_mean_squared_error(y_true, y_pred):
+    return np.sqrt(mse_loss(y_true,y_pred))
 
 # Step 20 - r_squared (not yet solved)
 # TODO: implement

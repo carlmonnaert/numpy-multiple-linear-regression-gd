@@ -91,7 +91,10 @@ def normal_equation(X, y):
     b = X.T @ y
     
     # Solve the linear system A w = b
-    return np.linalg.solve(A, b)
+    try:
+        return np.linalg.solve(A, b)
+    except np.linalg.LinAlgError:
+        return np.linalg.pinv(X.T @ X) @ X.T @ y
 
 # Step 11 - initialize_weights
 def initialize_weights(n_features, seed=None):
@@ -265,7 +268,11 @@ def fit_lr_model(model, X_train, y_train, X_val, y_val):
     weights, train_losses, val_losses = train_batch_gd(X_train_design, y_train, X_val_design, y_val, lr, epochs, patience, seed)
 
     # Get the weights from normal equations
-    normal_weights = normal_equation(X_train_design, y_train)
+    try:
+        normal_weights = normal_equation(X_train_design, y_train)
+    
+    except np.linalg.LinAlgError:
+        normal_weights = np.zeros(X_train_design.shape[1])
 
     # Write in the statistics
     model['mean'] = mean
